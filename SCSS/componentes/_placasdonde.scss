@@ -1,0 +1,40 @@
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../base/variables';
+
+
+/* DONDE INVIERTO - DONDE COMPRO  */
+
+.donde {
+    @extend %flexbox;
+    justify-content:space-evenly;
+    margin: 50px 0px 50px 0px;
+}
+
+
+.donde-elemento {
+    width: 30%;
+    background-color: rgb(255, 255, 255, 30%);
+    border-radius: $borde-redondeado;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+}
+
+
+.donde-titulo {
+    color: hsl(265, 25%, 65%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: nth($font-weight, 2);
+    margin-top: 15px;
+}
+
+
+.donde-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+
+
+
+/* FIN DONDE INVIERTO - DONDE COMPRO  */

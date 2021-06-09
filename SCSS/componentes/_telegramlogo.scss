@@ -1,0 +1,24 @@
+
+/* TELEGRAM FIXED LOGO */
+
+
+.telegram-fixed {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1;
+    opacity: 5%;
+    transition: 0.2s;
+}
+
+.telegram-fixed:hover {
+    opacity: 90%;
+}
+
+.telegram-text {
+    margin: 100px;
+}
+
+/*FIN TELEGRAM FIXED LOGO */

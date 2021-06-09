@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 18px ;
+}
+
+body {
+background-image: url('images/background.png');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size: cover;
+text-align: center;
+    font-family: "Inter Roman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.55;
+    width: 100%;
+    margin: 0px auto;
+    color: rgb(1, 1, 1);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.principal {
+    background-image: url("images/background2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+}
+    
+/* MENU */   
+
+
+.menu {
+    text-decoration: none;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    color: rgb(1, 1, 1);
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+
+
+.opciones {
+    display: inline-block;
+    margin-top: 0px;
+    width: 100%;
+    color: black;
+    letter-spacing: 1px;
+    justify-content: space-around;
+    }
+    
+.active {
+        color: #a390bd;
+    }
+
+nav ul li {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+li a {
+    transition: 0.2s all;
+}
+
+li a:hover {
+    color: #a390bd;
+}
+
+
+header a:hover {
+    color: #a390bd !important;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.logo-image {
+    margin: 10px;
+    padding-left: 2px;
+}
+
+.logo-transform {
+    transition: all 1s ease-in-out;
+}
+
+.logo-transform-fixed {
+    transition: all 1s ease-in-out;
+}
+
+.logo-transform-fixed:hover {
+    transform: scale(1); opacity: 100%;
+}
+
+
+.logo-transform:hover {
+    transform: rotate(360deg);
+
+}
+.logo-fixed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    z-index: 0;
+    opacity: 50%;
+    
+}
+.logo-texto {
+    text-align: center;
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    z-index: 10;
+ }
+
+ .menu-mobile {
+     margin-left: 50%;
+ }
+
+
+
+ /* MOBILE */
+
+
+ @media only screen and (min-width: 601px) {
+
+    .desktop-none {
+        display: none;
+    }
+ }
+
+ @media only screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .none-mobile {
+        display: none;
+    }
+
+    .titulos {
+        font-size: 1.5rem !important;
+        padding: 0px 20px;
+    }
+
+    .tabla {
+        display: flex;
+        flex-direction:column;
+        margin: 0px;
+    }
+
+    nav {
+        margin: 10px;
+    }
+
+    .boton-menu {
+        padding: 10px;
+        margin:  10px;
+    }
+    .table-elemento {
+        margin: 10px 0 10px 0;
+    }
+
+
+    .destacados-img-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+        justify-content: space-around !important;
+    }
+    .destacado-img {
+        width: 80%;
+        opacity: 100% !important;
+    }
+
+    .glosario-elemento {
+        width: 55% !important;
+    }
+
+    .glosario-portada {
+        width: 85%;
+    }
+    body {
+        background-image: url('images/fondo-mobile.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+            font-family: "Inter Roman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.55;
+            width: 100%;
+            margin: 0px auto;
+            color: rgb(1, 1, 1);
+            font-weight: 400;
+        }
+
+    .tabla {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+     }
+    
+    .donde-elemento {
+        width: 40% !important;
+        background-color: rgb(255, 255, 255, 30%);
+        border-radius: 25px;
+        align-items: center;
+        transition: 0.3s all;
+        margin: 10px 5px 5px 5px;
+    }
+
+    .donde {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .placas-width {
+        width: 75% !important;
+    }
+ }
+
+
+
+  /* FIN DEL MENÚ */
+
+  /* PORTADA */
+
+.portada {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hodlers-titulo1 {
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 6vw;
+    transition: 0.5s all ease-out;
+    opacity: 5%;
+}
+
+.hodlers-titulo2 {
+    z-index: 4;
+    position: absolute;
+    top: 230px;
+    left: 15%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 3vw;
+    transition: 0.5s all ease-out;
+    opacity: 5%;
+}
+
+.hodlers-titulo1:hover {
+    opacity: 100%;
+}
+
+.hodlers-titulo2:hover {
+    opacity: 100%;
+}
+
+/* HOMEPAGE */
+
+
+.columnas {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    }
+
+.placas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.destacado {
+    color: #a390bd;
+    text-decoration: overline wavy #a390bd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+
+
+.dondecompro {
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    margin: 1px;
+   
+}
+.titulos {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+
+
+.parrafos {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 20% 0 20%;
+}
+
+
+
+.proycontra {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 0 10% 0 10%;
+    text-decoration: none;
+}
+
+
+.formopciones {
+    display: inline-block;
+    text-decoration: overline wavy #a390bd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+/* DESTACADOS EXCHANGES */
+
+.destacados-img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0px 50px 0px;
+}
+
+.destacado-img {
+    opacity: 30%;
+}
+
+.destacado-trans {
+    transition: all 0.2s ease-in-out;
+}
+
+.destacado-trans:hover {
+    transform: scale(1.02);
+    opacity: 100%; 
+}
+
+
+
+/* PLACAS - DONDE INVIERTO */
+
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 100px 0px 50px 0px;
+    }
+
+
+.table-elemento {
+    width: 250px;
+    height: 250px ;
+    background-color: rgb(255, 255, 255, 30%);
+    padding: 5px 40px ;
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.table-titulo {
+    color: hsl(265, 25%, 65%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.table-imagen {
+    margin: 10px;
+    margin: auto;
+}
+
+.table-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+/* TELEGRAM FIXED LOGO */
+
+
+.telegram-fixed {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1;
+    opacity: 5%;
+    transition: 0.2s;
+}
+
+.telegram-fixed:hover {
+    opacity: 90%;
+}
+
+.telegram-text {
+    margin: 100px;
+}
+
+/* FOOTER */
+
+.firma {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 70px;
+    padding: 0 10% 0 10%;
+    color: #a390bd;
+}
+
+.footer {
+    font-weight: 400;
+    margin-bottom: 70px;
+    padding: 5% 10% 0% 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social-icon {
+    height: 75px;
+    width: 75px;
+    transition: 1s all;
+}
+
+.social-icon:hover {
+    transform: rotate(10deg);
+}
+
+.fuego {
+    transition: 1s all;
+    margin: 50px;
+}
+
+.fuego:hover {
+    transform: rotate(2deg) scale(1.02);
+   
+}
+
+.espacio {
+    opacity: 50%;
+    transition: 0.5s all;
+}
+
+.espacio:hover {
+    opacity: 100%;
+}
+
+
+/* GLOSARIO  */
+
+.glosario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+    }
+
+
+.glosario-elemento {
+    width: 25%;
+    background-color: rgb(255, 255, 255, 30%);
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+}
+
+
+.glosario-titulo {
+    color: hsl(265, 25%, 65%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+.glosario-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+
+
+/* DONDE INVIERTO - DONDE COMPRO  */
+
+.donde {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+}
+
+
+.donde-elemento {
+    width: 30%;
+    background-color: rgb(255, 255, 255, 30%);
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+}
+
+
+.donde-titulo {
+    color: hsl(265, 25%, 65%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+.donde-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+
+/* FORMULARIO */
+
+.form-button {
+    width: 100px;
+    color: hsl(265, 25%, 65%);
+    font-weight: bold;
+    background-color:white;
+    border-radius: 25px;
+}
+

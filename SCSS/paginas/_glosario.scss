@@ -1,0 +1,37 @@
+
+@import '../base/variables';
+
+/* GLOSARIO  */
+
+.glosario {
+    @extend %flexbox;
+    justify-content:space-evenly;
+    margin: 50px 0px 50px 0px;
+    }
+
+
+.glosario-elemento {
+    width: 25%;
+    background-color: rgb(255, 255, 255, 30%);
+    border-radius: $borde-redondeado;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+}
+
+
+.glosario-titulo {
+    color: nth($color, 2);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+.glosario-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+ 
+/* FIN DE GLOSARIO  */
+

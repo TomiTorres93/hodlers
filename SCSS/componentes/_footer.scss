@@ -1,0 +1,47 @@
+/* FOOTER */
+
+.firma {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 70px;
+    padding: 0 10% 0 10%;
+    color: #a390bd;
+}
+
+.footer {
+    font-weight: 400;
+    margin-bottom: 70px;
+    padding: 5% 10% 0% 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social-icon {
+    height: 75px;
+    width: 75px;
+    transition: 1s all;
+}
+
+.social-icon:hover {
+    transform: rotate(10deg);
+}
+
+.fuego {
+    transition: 1s all;
+    margin: 50px;
+}
+
+.fuego:hover {
+    transform: rotate(2deg) scale(1.02);
+   
+}
+
+.espacio {
+    opacity: 50%;
+    transition: 0.5s all;
+}
+
+.espacio:hover {
+    opacity: 100%;
+}
+
+/*FIN DE FOOTER */

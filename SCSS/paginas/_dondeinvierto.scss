@@ -1,0 +1,40 @@
+/* PLACAS - DONDE INVIERTO */
+
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 100px 0px 50px 0px;
+    }
+
+
+.table-elemento {
+    width: 250px;
+    height: 250px ;
+    background-color: rgb(255, 255, 255, 30%);
+    padding: 5px 40px ;
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.table-titulo {
+    color: hsl(265, 25%, 65%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.table-imagen {
+    margin: 10px;
+    margin: auto;
+}
+
+.table-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+
+
+/* FINAL PLACAS - DONDE INVIERTO */

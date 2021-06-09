@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+
+
+    <!-- META DESCRIPTION -->
+    <meta name="description"
+        content="Si querés hacernos alguna consulta o tenés algún comentario para hacernos 
+        sobre la página, podés enviarnos un correo electrónico. Recordá que podés escribirnos en el grupo de Telegram.">
+
+    <!-- KEYWORDS -->
+    <meta name="keywords" content="Criptomonedas, crypto, cripto, bitcoin, ethereum, exchange, cambio, comprar, vender, invertir, 
+        inversión, donde compro, donde invierto, rendimiento, dai, usd, usdt, moneda, estable, dólar, ayuda, guía, yield, farm, hold, 
+        hodl, blockchain, binance, buenbit, ripio, libertad, millonario, inflación, finanza, trade, trading, swap, Satoshi, wallet, 
+        metamask, p2p, comercio, DeFi">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:tittle" content="Hodlers - Contactanos por nuestro canal o vía email.">
+    <meta property="og:type" content="image/png">
+    <meta property="og:image" content="images\portada-hodlers.png">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image:height" content="118">
+    <meta property="og:url" content="contacto.html">
+    <meta property="og:description" content="Si querés hacernos alguna consulta o tenés algún comentario para hacernos 
+  sobre la página, podés enviarnos un correo electrónico. Recordá que podés escribirnos en el grupo de Telegram.">
+    <meta property="og:author" content="Hodlers">
+    <meta property="og:locale" content="en_AR">
+
+
+    <!-- Tittle -->
+    <title> Hodlers - Contactanos por nuestro canal o vía email. </title>
+</head>
+
+<body>
+    <section class="principal">
+        <header class="menu">
+
+
+            <!-- LOGO ENCABEZADO-->
+
+            <section id="section-logos">
+
+                <div class="logo">
+                    <a href="index.html"><img class="logo-image logo-transform logo-mediaquery"
+                            src="images/logo-solo.png" alt="Logo"></a>
+                    <a href="index.html">
+                        <p class="logo-texto logo-mediaquery"> hodlers.</p>
+                    </a>
+                </div>
+
+                <!-- LOGO FIXED-->
+                <div class="logo-fixed logo-transform-fixed ">
+                    <a href="index.html"><img class="logo-image logo-transform logo-mediaquery"
+                            src="images/logo-solo.png" alt="Logo"></a>
+
+                </div>
+
+            </section>
+            <!-- MENU -->
+            <!-- MENU DESKTOP -->
+            <nav class="opciones none-mobile">
+                <ul>
+                    <li><a href="donde-compro.html"> Dónde compro </a> </li>
+                    <li><a href="donde-invierto.html"> Dónde invierto </a> </li>
+                    <li><a href="te-ayudamos.html"> ¡Te ayudamos! </a></li>
+                    <li><a href="glosario.html"> Glosario </a> </li>
+                    <li><a href="videos.html"> Multimedia </a> </li>
+                    <li><a class="active" href="contacto.html"> Contacto </a> </li>
+                </ul>
+            </nav>
+
+            <!-- MENU MOBILE-->
+            <nav class="opciones desktop-none">
+                <img class="boton-menu" data-bs-toggle="collapse" href="#Exchange" role="button" aria-expanded="false"
+                    aria-controls="Exchange" src="images/menu-button.png" alt="contras">
+                <ul class="collapse multi-collapse" id="Exchange">
+                    <li><a href="donde-compro.html"> Dónde compro </a> </li>
+                    <li><a href="donde-invierto.html"> Dónde invierto </a> </li>
+                    <li><a href="te-ayudamos.html"> ¡Te ayudamos! </a></li>
+                    <li><a href="glosario.html"> Glosario </a> </li>
+                    <li><a href="videos.html"> Multimedia </a> </li>
+                    <li><a class="active" href="contacto.html"> Contacto </a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="titulos">¿Te quedaste con dudas?</h1>
+
+        <p class="parrafos">
+            Si querés hacernos alguna consulta o tenés algún comentario para hacernos sobre la página, podés
+            enviarnos un correo electrónico. Recordá que
+            podés escribirnos en el grupo de Telegram.
+        </p>
+        <img src="images\fuego.png" alt="separador">
+
+        <p class="destacado">
+            formulario
+        </p>
+
+        <form action="/server/" method="POST">
+
+            <!-- Name: los datos que requiere la base de datos backend -->
+
+            <div class="form">
+
+                <label for="formControlInput" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="formControlInput" placeholder="nombre@ejemplo.com">
+
+                <label for="formControlInput" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="formControlInput" placeholder="...">
+
+
+                <label for="formRange" class="form-label">¿Cuánto te sirvió la info de hodlers?</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" id="formRange">
+
+                <textarea class="form-textarea" name="mensaje" id="" cols="60" rows="10">
+            </textarea>
+                <div><button class="form-button" type="submit"> Enviar </button></div>
+            </div>
+        </form>
+
+        <a href="recomendaciones.html">404</a>
+
+        <footer class="footer">
+            <p class="destacado">Buscanos en nuestras redes sociales</p>
+            <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
+                        src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
+            <a target="_blank" href="https://www.twitter.com"> <img class="social-icon" src="images/logo-twitter.png"
+                    alt="Logo Twitter"> </a>
+            <p class="firma">Hodlers. Aprendé en comunidad.</p>
+        </footer>
+
+</body>
+
+</html>

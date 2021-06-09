@@ -1,0 +1,57 @@
+ 
+@import '../funciones/extends';
+@import '../funciones/list';
+ /* PORTADA */
+
+.portada {
+    @extend %flexbox-row;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hodlers-titulo1 {
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 6vw;
+    transition: 0.5s all ease-out;
+    opacity: 5%;
+}
+
+.hodlers-titulo2 {
+    z-index: 4;
+    position: absolute;
+    top: 230px;
+    left: 15%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 3vw;
+    transition: 0.5s all ease-out;
+    opacity: 5%;
+}
+
+.hodlers-titulo1:hover {
+    opacity: 100%;
+}
+
+.hodlers-titulo2:hover {
+    opacity: 100%;
+}
+
+.principal {
+    background-image: url('../images/BG/background2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+}
+
+
+  /* FIN DE LA PORTADA */

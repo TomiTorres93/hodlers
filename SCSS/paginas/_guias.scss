@@ -1,0 +1,32 @@
+/*GUIAS*/
+@import '../base/size';
+
+
+.img-1 {
+    width: $ancho-base;
+    margin: auto;
+}
+
+.img-2 {
+    @extend %flexbox-row;
+    width: $ancho-base - 10%;
+    margin: auto;
+}
+
+.img-3 {
+    @extend %flexbox-row;
+    width: $ancho-base / 1.1;
+    margin: auto;
+}
+
+
+.img-4 {
+    width: $ancho-base + 10%;
+    margin: auto;
+}
+
+
+.img-5 {
+    width: $ancho-base * 1.2;
+    margin: auto;
+}

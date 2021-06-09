@@ -1,0 +1,666 @@
+@charset "UTF-8";
+/* Extends */
+.glosario, .donde, .placas, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .destacados-img-container, .columnas, .portada, .logo-fixed, .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MENU */
+.menu {
+  text-decoration: none;
+  text-align: right;
+  position: static;
+  color: black;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+.menu .opciones {
+  display: inline-block;
+  margin-top: 0px;
+  width: 100%;
+  color: black;
+  letter-spacing: 1px;
+  justify-content: space-around;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.menu li a {
+  transition: 0.2s all;
+}
+.menu li a:hover {
+  color: #a390bd;
+}
+.menu .active {
+  color: #a390bd;
+}
+.menu nav ul li {
+  margin: 10px;
+}
+
+header a:hover {
+  color: #a390bd !important;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.logo .logo-image {
+  margin: 10px;
+  padding-left: 2px;
+}
+.logo .logo-transform {
+  transition: all 1s ease-in-out;
+}
+.logo .logo-transform:hover {
+  transform: rotate(360deg);
+}
+.logo .logo-texto {
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+  z-index: 10;
+}
+
+.logo-transform-fixed {
+  transition: all 1s ease-in-out;
+}
+.logo-transform-fixed:hover {
+  transform: scale(1);
+  opacity: 100%;
+  transform: rotate(360deg);
+}
+
+.logo-fixed {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  margin-top: 10px;
+  z-index: 0;
+  opacity: 50%;
+  padding-left: 2px;
+}
+
+.menu-mobile {
+  margin-left: 50%;
+}
+
+/* FOOTER */
+.firma {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 70px;
+  padding: 0 10% 0 10%;
+  color: #a390bd;
+}
+
+.footer {
+  font-weight: 400;
+  margin-bottom: 70px;
+  padding: 5% 10% 0% 10%;
+  font-family: "Raleway", sans-serif;
+}
+
+.social-icon {
+  height: 75px;
+  width: 75px;
+  transition: 1s all;
+}
+
+.social-icon:hover {
+  transform: rotate(10deg);
+}
+
+.fuego {
+  transition: 1s all;
+  margin: 50px;
+}
+
+.fuego:hover {
+  transform: rotate(2deg) scale(1.02);
+}
+
+.espacio {
+  opacity: 50%;
+  transition: 0.5s all;
+}
+
+.espacio:hover {
+  opacity: 100%;
+}
+
+/*FIN DE FOOTER */
+/* Extends */
+.glosario, .donde, .placas, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .destacados-img-container, .columnas, .portada, .logo, .logo-fixed {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* PORTADA */
+.portada {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titulo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hodlers-titulo1 {
+  z-index: 4;
+  position: absolute;
+  top: 100px;
+  left: 15%;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 6vw;
+  transition: 0.5s all ease-out;
+  opacity: 5%;
+}
+
+.hodlers-titulo2 {
+  z-index: 4;
+  position: absolute;
+  top: 230px;
+  left: 15%;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 3vw;
+  transition: 0.5s all ease-out;
+  opacity: 5%;
+}
+
+.hodlers-titulo1:hover {
+  opacity: 100%;
+}
+
+.hodlers-titulo2:hover {
+  opacity: 100%;
+}
+
+.principal {
+  background-image: url("../images/BG/background2.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+/* FIN DE LA PORTADA */
+/* Extends */
+.glosario, .donde, .placas, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .destacados-img-container, .columnas, .logo, .logo-fixed, .portada {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-image: url("../images/BG/bgbody.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: "Inter Roman", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.55;
+  width: 100%;
+  margin: 0px auto;
+  color: black;
+  font-weight: 400;
+}
+
+.columnas {
+  width: 100%;
+}
+
+.destacado {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #a390bd;
+  text-decoration: overline wavy #a390bd;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.titulos {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.parrafos {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  padding: 0 20% 0 20%;
+}
+
+.glosario-texto {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  padding: 0 5% 0 5%;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* DESTACADOS EXCHANGES */
+.destacados-img-container {
+  justify-content: space-evenly;
+  margin: 20px 0px 50px 0px;
+}
+
+.destacado-img {
+  opacity: 30%;
+}
+
+.destacado-trans {
+  transition: all 0.2s ease-in-out;
+}
+
+.destacado-trans:hover {
+  transform: scale(1.02);
+  opacity: 100%;
+}
+
+.enlances {
+  text-decoration: none;
+  color: #a390bd;
+}
+
+/* Extends */
+.glosario, .donde, .menu, .placas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* DONDE INVIERTO - DONDE COMPRO  */
+.donde {
+  justify-content: space-evenly;
+  margin: 50px 0px 50px 0px;
+}
+
+.donde-elemento {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+  margin: 20px;
+}
+
+.donde-titulo {
+  color: #a28fbc;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.donde-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
+/* FIN DONDE INVIERTO - DONDE COMPRO  */
+/* TELEGRAM FIXED LOGO */
+.telegram-fixed {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 1;
+  opacity: 5%;
+  transition: 0.2s;
+}
+
+.telegram-fixed:hover {
+  opacity: 90%;
+}
+
+.telegram-text {
+  margin: 100px;
+}
+
+/*FIN TELEGRAM FIXED LOGO */
+/* MOBILE */
+@media only screen and (min-width: 601px) {
+  .desktop-none {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .none-mobile {
+    display: none !important;
+  }
+
+  .titulos {
+    font-size: 1.5rem !important;
+    padding: 0px 20px;
+  }
+
+  .tabla {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  nav {
+    margin: 10px;
+  }
+
+  .boton-menu {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .table-elemento {
+    margin: 10px 0 10px 0;
+  }
+
+  .destacados-img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    justify-content: space-around !important;
+  }
+
+  .destacado-img {
+    width: 80%;
+    opacity: 100% !important;
+  }
+
+  .glosario-elemento {
+    width: 55% !important;
+  }
+
+  .glosario-portada {
+    width: 85%;
+  }
+
+  body {
+    background-image: url("images/fondo-mobile.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Inter Roman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.55;
+    width: 100%;
+    margin: 0px auto;
+    color: #010101;
+    font-weight: 400;
+  }
+
+  .tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .donde-elemento {
+    width: 70% !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 10px 5px 5px 5px;
+  }
+
+  .donde {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .placas-width {
+    width: 75% !important;
+  }
+}
+/* FIN DEL MENÚ */
+/* HOMEPAGE */
+/*TAMAÑO DE IMÁGENES*/
+/* GLOSARIO  */
+.glosario {
+  justify-content: space-evenly;
+  margin: 50px 0px 50px 0px;
+}
+
+.glosario-elemento {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+  margin: 20px;
+}
+
+.glosario-titulo {
+  color: #a390bd;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.glosario-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
+/* FIN DE GLOSARIO  */
+/* PLACAS - DONDE INVIERTO */
+.tabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 0px 50px 0px;
+}
+
+.table-elemento {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 40px;
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.table-titulo {
+  color: #a28fbc;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.table-imagen {
+  margin: 10px;
+  margin: auto;
+}
+
+.table-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
+/* FINAL PLACAS - DONDE INVIERTO */
+/* FORMULARIO */
+.form-button {
+  width: 100px;
+  color: #a28fbc;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 25px;
+}
+
+/*FIN DEL FORMULARIO */
+/*GUIAS*/
+/*TAMAÑO DE IMÁGENES*/
+.img-1 {
+  width: 100%;
+  margin: auto;
+}
+
+.img-2 {
+  width: 90%;
+  margin: auto;
+}
+
+.img-3 {
+  width: 90.9090909091%;
+  margin: auto;
+}
+
+.img-4 {
+  width: 110%;
+  margin: auto;
+}
+
+.img-5 {
+  width: 120%;
+  margin: auto;
+}
+
+/* Extends */
+.menu, .placas, .donde, .glosario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo, .logo-fixed, .portada, .columnas, .destacados-img-container, .img-2, .img-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+.reco-tabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 0px 50px 0px;
+}
+
+.reco-elemento {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 40px;
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.reco-titulo {
+  color: #a28fbc;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.reco-imagen {
+  margin: 10px;
+  margin: auto;
+}
+
+.reco-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+
+/*# sourceMappingURL=style.css.map */

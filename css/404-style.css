@@ -1,0 +1,67 @@
+
+     body {
+        background-image: url('../images/BG/404bg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 18px;
+        text-align: center;
+        font-family: "Inter Roman", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        line-height: 2;
+    }
+
+.titulo {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    text-decoration: overline wavy;
+    font-size: 4rem;
+}
+
+.texto {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.texto2 {
+    color: #a390bd;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.bg {
+    width: 100%;
+    z-index: -10;
+    position: fixed;
+}
+
+
+.telegramimg {
+    transition: 1s all;
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  
+  .telegramimg:hover {
+    transform: rotate(2deg) scale(1.02);
+  }
+
+
+ 

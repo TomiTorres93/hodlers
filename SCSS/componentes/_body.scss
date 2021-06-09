@@ -1,0 +1,101 @@
+
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../funciones/mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 18px ;
+}
+
+body {
+    background-image: url('../images/BG/bgbody.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Inter Roman", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.55;
+    width: 100%;
+    margin: 0px auto;
+    color: nth($color, 1);
+    font-weight: nth($font-weight, 1);
+}
+
+
+.columnas {
+    @extend %flexbox-row;
+    width: 100%;
+}
+
+.placas {
+    @extend %flexbox;
+}
+
+.destacado {   
+    @include destacados(2rem);
+    color: nth($color, 2);
+    text-decoration: overline wavy nth($color, 2);
+    font-weight: nth($font-weight, 2);
+    margin-top: 50px;
+}
+
+
+
+.titulos {
+    @include destacados(3rem);
+    font-weight: nth($font-weight, 1);
+    margin: 30px 0;
+}
+
+
+
+.parrafos {
+    @include textos(black, 0 20% 0 20%);
+}
+
+.glosario-texto {
+    @include textos(black, 0 5% 0 5%);
+}
+
+
+.img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* DESTACADOS EXCHANGES */
+
+.destacados-img-container {
+    @extend %flexbox-row;
+    justify-content: space-evenly;
+    margin: 20px 0px 50px 0px;
+}
+
+.destacado-img {
+    opacity: 30%;
+}
+
+.destacado-trans {
+    transition: all 0.2s ease-in-out;
+}
+
+.destacado-trans:hover {
+    transform: scale(1.02);
+    opacity: 100%; 
+}
+
+
+.enlances {
+    text-decoration: none;
+    color: nth($color, 2);
+}
+
+
+
+
