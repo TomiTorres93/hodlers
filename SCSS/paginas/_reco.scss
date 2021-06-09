@@ -4,3 +4,54 @@
 @import '../funciones/mixins';
 
 
+.img-reco {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+.reco-tabla {
+    @extend %flexbox;
+    justify-content:space-evenly;
+    margin: 50px 0px 50px 0px;
+    }
+
+
+.reco-elemento {
+    width: 30%;
+    background-color: rgb(255, 255, 255, 70%);
+    border-radius: $borde-redondeado;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+    height: 400px;
+}
+
+
+.reco-titulo {
+    color: nth($color, 2);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+.reco-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
+
+.reco-texto {
+    @include textos(black, 0 5% 0 5%);
+}
+
+.reco-social {
+    width: 35px;
+    opacity: 30%;
+    transition: 0.5s all;
+
+        &:hover {
+            opacity: 100%;
+        }    
+}

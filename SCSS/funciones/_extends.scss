@@ -16,3 +16,11 @@
     flex-wrap: wrap;
 }
 
+
+%flexbox-columna {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+

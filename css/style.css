@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Extends */
-.glosario, .donde, .placas, .menu {
+.reco-tabla, .glosario, .donde, .placas, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@ header a:hover {
 
 /*FIN DE FOOTER */
 /* Extends */
-.glosario, .donde, .placas, .menu {
+.reco-tabla, .glosario, .donde, .placas, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +225,7 @@ header a:hover {
 
 /* FIN DE LA PORTADA */
 /* Extends */
-.glosario, .donde, .placas, .menu {
+.reco-tabla, .glosario, .donde, .placas, .menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,7 +331,7 @@ body {
 }
 
 /* Extends */
-.glosario, .donde, .menu, .placas {
+.reco-tabla, .glosario, .donde, .menu, .placas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,6 +396,26 @@ body {
 
 /*FIN TELEGRAM FIXED LOGO */
 /* MOBILE */
+/* Extends */
+.reco-tabla, .glosario, .menu, .placas, .donde {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
 @media only screen and (min-width: 601px) {
   .desktop-none {
     display: none !important;
@@ -456,7 +476,7 @@ body {
   }
 
   body {
-    background-image: url("images/fondo-mobile.png");
+    background-image: url("../images/fondo-mobile.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -496,6 +516,32 @@ body {
 
   .placas-width {
     width: 75% !important;
+  }
+
+  .reco-tabla {
+    justify-content: space-evenly;
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .reco-elemento {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+    height: 300px;
+    width: 70% !important;
+  }
+
+  .img-reco {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-top: 5%;
   }
 }
 /* FIN DEL MENÚ */
@@ -604,7 +650,7 @@ body {
 }
 
 /* Extends */
-.menu, .placas, .donde, .glosario {
+.reco-tabla, .menu, .placas, .donde, .glosario {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -623,39 +669,54 @@ body {
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
 /*AGREGAR WEBKITS*/
+.img-reco {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
 .reco-tabla {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  margin: 100px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .reco-elemento {
-  width: 250px;
-  height: 250px;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 5px 40px;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   align-items: center;
   transition: 0.3s all;
+  margin: 20px;
+  height: 400px;
 }
 
 .reco-titulo {
-  color: #a28fbc;
+  color: #a390bd;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: 15px;
 }
 
-.reco-imagen {
-  margin: 10px;
-  margin: auto;
-}
-
 .reco-elemento:hover {
   background-color: rgba(190, 158, 218, 0.2);
+}
+
+.reco-texto {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  padding: 0 5% 0 5%;
+}
+
+.reco-social {
+  width: 35px;
+  opacity: 30%;
+  transition: 0.5s all;
+}
+.reco-social:hover {
+  opacity: 100%;
 }
 
 /* MIXINS */

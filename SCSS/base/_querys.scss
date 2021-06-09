@@ -1,5 +1,9 @@
 /* MOBILE */
 
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../funciones/mixins';
+
 
 @media only screen and (min-width: 601px) {
 
@@ -61,7 +65,7 @@
         width: 85%;
     }
     body {
-        background-image: url('images/fondo-mobile.png');
+        background-image: url('../images/fondo-mobile.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -101,6 +105,33 @@
 
     .placas-width {
         width: 75% !important;
+    }
+
+    .reco-tabla {
+        justify-content:space-evenly;
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+    
+
+    .reco-elemento {
+        background-color: rgb(255, 255, 255, 70%);
+        border-radius: $borde-redondeado;
+        align-items: center;
+        transition: 0.3s all;
+        margin: 20px;
+        height: 300px;
+        width: 70% !important;
+    }
+
+    .img-reco {
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        margin-top: 5%;
     }
  }
 
