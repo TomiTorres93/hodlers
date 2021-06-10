@@ -388,6 +388,14 @@ body {
   background-color: rgba(190, 158, 218, 0.2);
 }
 
+.verde {
+  color: #396112;
+}
+
+.rojo {
+  color: #991111;
+}
+
 /* FIN DONDE INVIERTO - DONDE COMPRO  */
 /* TELEGRAM FIXED LOGO */
 .telegram-fixed {
