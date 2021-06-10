@@ -19,13 +19,7 @@
 
 
 .reco-elemento {
-    width: 30%;
-    background-color: rgb(255, 255, 255, 70%);
-    border-radius: $borde-redondeado;
-    align-items: center;
-    transition: 0.3s all;
-    margin: 20px;
-    height: 400px;
+    @include table-card (30%, 400px)
 }
 
 

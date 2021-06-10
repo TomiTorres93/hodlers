@@ -373,6 +373,21 @@ body {
   background-color: rgba(190, 158, 218, 0.2);
 }
 
+.donde-elemento2 {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+  margin: 20px;
+  width: 62%;
+  height: 400px;
+  margin: auto;
+}
+
+.donde-elemento2:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
 /* FIN DONDE INVIERTO - DONDE COMPRO  */
 /* TELEGRAM FIXED LOGO */
 .telegram-fixed {
@@ -533,8 +548,8 @@ body {
     align-items: center;
     transition: 0.3s all;
     margin: 20px;
-    height: 300px;
     width: 70% !important;
+    height: 420px !important;
   }
 
   .img-reco {
@@ -542,6 +557,10 @@ body {
     width: 60px;
     border-radius: 50px;
     margin-top: 5%;
+  }
+
+  .donde-elemento2 {
+    height: 500px !important;
   }
 }
 /* FIN DEL MENÚ */
@@ -682,12 +701,12 @@ body {
 }
 
 .reco-elemento {
-  width: 30%;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   align-items: center;
   transition: 0.3s all;
   margin: 20px;
+  width: 30%;
   height: 400px;
 }
 

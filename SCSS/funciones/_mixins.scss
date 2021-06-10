@@ -17,5 +17,14 @@
     padding: $padding;
 }
 
+@mixin table-card($width, $height) {
+    background-color: rgb(255, 255, 255, 70%);
+    border-radius: $borde-redondeado;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+    width: $width;
+    height: $height;
+}
 
 /*AGREGAR WEBKITS*/

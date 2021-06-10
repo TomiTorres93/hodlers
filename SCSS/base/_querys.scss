@@ -123,8 +123,9 @@
         align-items: center;
         transition: 0.3s all;
         margin: 20px;
-        height: 300px;
         width: 70% !important;
+        height: 420px !important;
+        
     }
 
     .img-reco {
@@ -132,6 +133,10 @@
         width: 60px;
         border-radius: 50px;
         margin-top: 5%;
+    }
+
+    .donde-elemento2 {
+       height: 500px !important;
     }
  }
 
