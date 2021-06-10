@@ -18,7 +18,7 @@
 }
 
 @mixin table-card($width, $height) {
-    background-color: rgb(255, 255, 255, 70%);
+    background-color: rgb(255, 255, 255, 50%);
     border-radius: $borde-redondeado;
     align-items: center;
     transition: 0.3s all;
