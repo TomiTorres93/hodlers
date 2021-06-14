@@ -3,6 +3,9 @@
 @import '../funciones/list';
 @import '../funciones/mixins';
 
+@import '../base/variables';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +27,6 @@ body {
     width: 100%;
     margin: 0px auto;
     color: nth($color, 1);
-    font-weight: nth($font-weight, 1);
 }
 
 
@@ -97,5 +99,54 @@ body {
 }
 
 
+/* FRASES */
 
 
+.frase-section {
+    background-color: nth($color, 2);
+}
+.frases-container {
+    @extend %flexbox-row;
+    justify-content: space-evenly;
+    padding: 150px 0px 150px 0px;
+    z-index: 100;
+}
+
+.frases {
+width: 25%;
+@include destacados(1.5rem);
+font-weight: nth($font-weight, 2) !important;
+padding: 50px;
+background-color: white;
+border-radius: $borde-redondeado;
+transition: 0.5s all;
+border: hsl(265, 25%, 65%) groove;
+box-shadow: nth($color, 3) 20px -16px;
+    &:hover {
+        border: hsl(265, 25%, 65%) groove;
+        box-shadow: nth($color, 4) 15px -10px;
+    }
+}
+
+.texto-vertical {
+    @include destacados(1rem);
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+    font-weight:lighter;
+    transition: 1s;
+    color: white;
+        &:hover {
+            transform: translate(10px);
+            color: nth($color, 3);
+        }
+}
+
+.texto-lila {
+    color: nth($color, 4);
+}
+
+.fondo-separador {
+    z-index: -100;
+    width: 100%;
+    position: relative;
+}

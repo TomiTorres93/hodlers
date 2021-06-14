@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.img-3, .img-2, .destacados-img-container, .columnas, .portada, .logo-fixed, .logo {
+.img-3, .img-2, .frases-container, .destacados-img-container, .columnas, .portada, .logo-fixed, .logo {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -165,7 +165,7 @@ header a:hover {
   flex-wrap: wrap;
 }
 
-.img-3, .img-2, .destacados-img-container, .columnas, .portada, .logo, .logo-fixed {
+.img-3, .img-2, .frases-container, .destacados-img-container, .columnas, .portada, .logo, .logo-fixed {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -232,7 +232,7 @@ header a:hover {
   flex-wrap: wrap;
 }
 
-.img-3, .img-2, .destacados-img-container, .columnas, .logo, .logo-fixed, .portada {
+.img-3, .img-2, .frases-container, .destacados-img-container, .columnas, .logo, .logo-fixed, .portada {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -264,7 +264,6 @@ body {
   width: 100%;
   margin: 0px auto;
   color: black;
-  font-weight: 400;
 }
 
 .columnas {
@@ -330,6 +329,58 @@ body {
   color: #a390bd;
 }
 
+/* FRASES */
+.frase-section {
+  background-color: #a390bd;
+}
+
+.frases-container {
+  justify-content: space-evenly;
+  padding: 150px 0px 150px 0px;
+  z-index: 100;
+}
+
+.frases {
+  width: 25%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+  padding: 50px;
+  background-color: white;
+  border-radius: 25px;
+  transition: 0.5s all;
+  border: #a28fbc groove;
+  box-shadow: #74668a 20px -16px;
+}
+.frases:hover {
+  border: #a28fbc groove;
+  box-shadow: #8a7aa3 15px -10px;
+}
+
+.texto-vertical {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: lighter;
+  transition: 1s;
+  color: white;
+}
+.texto-vertical:hover {
+  transform: translate(10px);
+  color: #74668a;
+}
+
+.texto-lila {
+  color: #8a7aa3;
+}
+
+.fondo-separador {
+  z-index: -100;
+  width: 100%;
+  position: relative;
+}
+
 /* Extends */
 .reco-tabla, .glosario, .donde, .menu, .placas {
   display: flex;
@@ -338,7 +389,7 @@ body {
   flex-wrap: wrap;
 }
 
-.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container {
+.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container, .frases-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -388,6 +439,20 @@ body {
   background-color: rgba(190, 158, 218, 0.2);
 }
 
+.donde-elemento3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+  margin: 20px;
+  width: 30%;
+  height: 400px;
+}
+
+.donde-elemento3:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
 .verde {
   color: #396112;
 }
@@ -427,7 +492,7 @@ body {
   flex-wrap: wrap;
 }
 
-.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container {
+.img-3, .img-2, .logo, .logo-fixed, .portada, .columnas, .destacados-img-container, .frases-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -556,7 +621,7 @@ body {
     align-items: center;
     transition: 0.3s all;
     margin: 20px;
-    width: 70% !important;
+    width: 80% !important;
     height: 420px !important;
   }
 
@@ -568,7 +633,13 @@ body {
   }
 
   .donde-elemento2 {
-    height: 500px !important;
+    height: 520px !important;
+    width: 80%;
+  }
+
+  .donde-elemento3 {
+    width: 80%;
+    height: 450px;
   }
 }
 /* FIN DEL MENÚ */
@@ -684,7 +755,7 @@ body {
   flex-wrap: wrap;
 }
 
-.logo, .logo-fixed, .portada, .columnas, .destacados-img-container, .img-2, .img-3 {
+.logo, .logo-fixed, .portada, .columnas, .destacados-img-container, .frases-container, .img-2, .img-3 {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -718,16 +789,16 @@ body {
   height: 400px;
 }
 
+.reco-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
 .reco-titulo {
   color: #a390bd;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: 15px;
-}
-
-.reco-elemento:hover {
-  background-color: rgba(190, 158, 218, 0.2);
 }
 
 .reco-texto {

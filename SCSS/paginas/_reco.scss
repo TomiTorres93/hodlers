@@ -22,6 +22,9 @@
     @include table-card (30%, 400px)
 }
 
+.reco-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}
 
 .reco-titulo {
     color: nth($color, 2);
@@ -31,10 +34,6 @@
     margin-top: 15px;
 }
 
-
-.reco-elemento:hover {
-    background-color: rgb(190, 158, 218, 20%);
-}
 
 .reco-texto {
     @include textos(black, 0 5% 0 5%);
