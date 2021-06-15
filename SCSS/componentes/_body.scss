@@ -113,6 +113,12 @@ body {
 }
 
 .frases {
+text-decoration: none;
+color: black;
+    &:hover {
+        color: nth($color, 3);
+    }
+
 width: 25%;
 @include destacados(1.5rem);
 font-weight: nth($font-weight, 2) !important;
@@ -149,4 +155,16 @@ box-shadow: nth($color, 3) 20px -16px;
     z-index: -100;
     width: 100%;
     position: relative;
+}
+
+.espacios {
+    padding: 150px 0;
+}
+
+.fuente {
+    @include textos(black, 0 5% 0 5%)
+}
+
+.separador {
+    margin: 50px;
 }
