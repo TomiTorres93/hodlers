@@ -1,3 +1,11 @@
+
+
+@import '../funciones/extends';
+@import '../funciones/list';
+@import '../funciones/mixins';
+
+@import '../base/variables';
+
 /* FOOTER */
 
 .firma {
@@ -5,12 +13,11 @@
     font-weight: 400;
     margin-bottom: 70px;
     padding: 0 10% 0 10%;
-    color: #a390bd;
+    color: nth($color, 2);
 }
 
 .footer {
     font-weight: 400;
-    margin-bottom: 70px;
     padding: 5% 10% 0% 10%;
     font-family: 'Raleway', sans-serif;
 }

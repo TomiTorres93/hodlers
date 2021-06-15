@@ -47,6 +47,13 @@ body {
     margin-top: 50px;
 }
 
+.destacado-blanco {   
+    @include destacados(2rem);
+    color: white;
+    text-decoration: overline wavy white;
+    font-weight: nth($font-weight, 2);
+    margin-top: 50px;
+}
 
 
 .titulos {
@@ -158,7 +165,7 @@ box-shadow: nth($color, 3) 20px -16px;
 }
 
 .espacios {
-    padding: 150px 0;
+    padding: 50px 0;
 }
 
 .fuente {
@@ -167,4 +174,8 @@ box-shadow: nth($color, 3) 20px -16px;
 
 .separador {
     margin: 50px;
+}
+
+.azul {
+    color: rgb(103, 105, 201);
 }

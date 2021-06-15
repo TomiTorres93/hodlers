@@ -5,14 +5,14 @@
 @import '../funciones/mixins';
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
 
     .desktop-none {
         display: none !important;
     }
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
     *{
         margin: 0px;
         padding: 0px;
@@ -144,6 +144,30 @@
         width: 80%;
         height: 450px;
     }
+
+    .frases-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .frases {
+        width: 70%;
+        margin: 20px;
+        @include destacados(1rem);
+    }
+    
+    .texto-vertical {
+        writing-mode: horizontal-tb;
+        text-orientation:sideways;
+        text-transform: uppercase;
+     
+    }
+    
+
+
 
  }
 

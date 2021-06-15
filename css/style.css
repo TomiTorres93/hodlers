@@ -112,6 +112,26 @@ header a:hover {
   margin-left: 50%;
 }
 
+/* Extends */
+.reco-tabla, .glosario, .donde, .placas, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-3, .img-2, .frases-container, .destacados-img-container, .columnas, .portada, .logo, .logo-fixed {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
 /* FOOTER */
 .firma {
   font-size: 1rem;
@@ -123,7 +143,6 @@ header a:hover {
 
 .footer {
   font-weight: 400;
-  margin-bottom: 70px;
   padding: 5% 10% 0% 10%;
   font-family: "Raleway", sans-serif;
 }
@@ -279,6 +298,15 @@ body {
   margin-top: 50px;
 }
 
+.destacado-blanco {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-decoration: overline wavy white;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
 .titulos {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
@@ -387,7 +415,7 @@ body {
 }
 
 .espacios {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .fuente {
@@ -399,6 +427,10 @@ body {
 
 .separador {
   margin: 50px;
+}
+
+.azul {
+  color: #6769c9;
 }
 
 /* Extends */
@@ -524,12 +556,12 @@ body {
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
 /*AGREGAR WEBKITS*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   .desktop-none {
     display: none !important;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   * {
     margin: 0px;
     padding: 0px;
@@ -660,6 +692,27 @@ body {
   .donde-elemento3 {
     width: 80%;
     height: 450px;
+  }
+
+  .frases-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .frases {
+    width: 70%;
+    margin: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+  }
+
+  .texto-vertical {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    text-transform: uppercase;
   }
 }
 /* FIN DEL MENÚ */
