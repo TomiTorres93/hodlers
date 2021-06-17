@@ -608,7 +608,7 @@ body {
   }
 
   .glosario-elemento {
-    width: 55% !important;
+    width: 70% !important;
   }
 
   .glosario-portada {
@@ -713,6 +713,11 @@ body {
     writing-mode: horizontal-tb;
     text-orientation: sideways;
     text-transform: uppercase;
+  }
+
+  .parrafos {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 /* FIN DEL MENÚ */
