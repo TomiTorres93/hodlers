@@ -15,6 +15,8 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
+    <!-- AOS - efectos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- FONTS -->
 
@@ -142,19 +144,19 @@
 
     <section class="frase-section">
       <div class="frases-container">
-        <p class="frases"> Al depositar tus cripto en exchanges o protocolos DeFi corrés <span class="texto-lila">
+        <p data-aos="fade-right" class="frases"> Al depositar tus cripto en exchanges o protocolos DeFi corrés <span class="texto-lila">
             mayores riesgos ante posibles vulnerabilidades o hackeos.</span></p>
-        <p class="frases"> Sos el único responsable de tu plata, <span class="texto-lila">
+        <p data-aos="fade-right" class="frases"> Sos el único responsable de tu plata, <span class="texto-lila">
             por eso debés hacer tu propia investigación</span> antes de invertir en cualquier sitio.</p>
-        <p class="texto-vertical"> tené en cuenta </p>
+        <p data-aos="fade-left" class="texto-vertical"> tené en cuenta </p>
       </div>
     </section>
 
 
     <!-- Título sección -->
-    <h3 class="destacado"> CeFi </h3>
+    <h3 data-aos="fade-up" class="destacado"> CeFi </h3>
 
-    <div class="reco-tabla">
+    <div data-aos="fade-up" class="reco-tabla">
       <div class="donde-elemento3">
         <img class="img-reco" src="images/exchanges/ripio.jpg" alt="Ripio">
         <p class="reco-titulo"> Ripio </p>
@@ -219,11 +221,11 @@
 
     <section class="frase-section">
       <div class="frases-container">
-        <p class="texto-vertical"> DeFi </p>
-        <p class="frases"> En DeFi podés obtener retornos por hacer staking, por proveer
+        <p data-aos="fade-right" class="texto-vertical"> DeFi </p>
+        <p data-aos="fade-left" class="frases"> En DeFi podés obtener retornos por hacer staking, por proveer
           liquidez en un Dex o por proveer colateral en plataformas de préstamos (lend and borrow).
         </p>
-        <p class="frases"> Las distintas Dapps pueden funcionar sobre distintas blockchains.
+        <p data-aos="fade-left" class="frases"> Las distintas Dapps pueden funcionar sobre distintas blockchains.
           Las más utilizadas son:<span class="texto-lila"> Ethereum, Binance Smart Chain y Polygon.
           </span>¡Buscalas en el glosario!</p>
 
@@ -231,9 +233,9 @@
     </section>
 
     <!-- Título sección -->
-    <h3 class="destacado"> DeFi </h3>
+    <h3 data-aos="fade-up" class="destacado"> DeFi </h3>
 
-    <div class="reco-tabla">
+    <div data-aos="fade-up" class="reco-tabla">
       <div class="donde-elemento3">
         <img class="img-reco" src="images/exchanges/yearn.png" alt="Yearn Finance">
         <p class="reco-titulo"> Yearn.Finance </p>
@@ -303,11 +305,11 @@
     </div>
 
 
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
       <p class="destacado">Buscanos en nuestras redes sociales</p>
       <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
             src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
-      <a target="_blank" href="https://www.twitter.com"> <img class="social-icon" src="images/logo-twitter.png"
+      <a target="_blank" href="https://twitter.com/hodlers_crypto"> <img class="social-icon" src="images/logo-twitter.png"
           alt="Logo Twitter"> </a>
       <p class="firma">Hodlers. Aprendé en comunidad.</p>
     </footer>
@@ -315,6 +317,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 150, // offset (in px) from the original trigger point
+  delay: 10, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
 
 </body>
 

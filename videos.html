@@ -13,6 +13,8 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+        <!-- AOS - efectos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- FONTS -->
 
@@ -121,21 +123,20 @@
         <div class="espacios">        </div>
     </section>
 
-    <div>
+    <div data-aos="fade-up">
         <h2 class="destacado"> Healthy Pockets</h2>
         <p class="parrafos">
             ¿Cuáles son las mejores criptomonedas para invertir en mayo? Hugo te cuenta
             sobre alguna de estas opciones.
         </p>
     </div>
-
-
     </section>
+    <div data-aos="fade-up">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/AcD_8RWjcsc" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen></iframe> </div>
 
-    <div>
+    <div data-aos="fade-up">
         <h2 class="destacado"> CryptoChica</h2>
         <p class="parrafos">
             En este video, Romina Sejas te cuenta cómo configurar tu wallet Metamask,
@@ -143,27 +144,28 @@
             como la red Ethereum o Binance Smart Chain.
         </p>
     </div>
-    <div>
+    <div data-aos="fade-up">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/z9xPt-1hdgU" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
 
-    <div>
+    <div data-aos="fade-up">
         <h2 class="destacado"> La Piscina Podcast</h2>
         <p class="parrafos">
             ¿Tuviste ganancias con las cripto y te preocupa cuánto sabe la AFIP sobre vos?
             En este podcast, La Piscina entrevista a un empleado de agencia y devela
             algunos de nuestros mayores interrogantes.
         </p>
+     
+    <iframe src="https://open.spotify.com/embed-podcast/episode/77fvzI9uLbBUnfawHai6rU" width="50%" height="232"
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
     </div>
 
-    <iframe src="https://open.spotify.com/embed-podcast/episode/77fvzI9uLbBUnfawHai6rU" width="50%" height="232"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 <!-- LAS PROMESAS DE ELON -->
 
-    <div>
+    <div data-aos="fade-up">
         <h2 class="destacado"> Las promesas de Elon </h2>
         <p class="parrafos">
             Un episodio sobre la brecha de género en tecnología con las fundadoras de la organización 
@@ -172,26 +174,54 @@
             de chiquitas y qué podemos cambiar? ¿Existe tal vez un estereotipo del estereotipo? Y, ¿por qué 
             necesitamos más chicas en tecnología?
         </p>
+        <iframe src="https://open.spotify.com/embed/episode/6sSxbsFEJR56Lk3N6NQdJ6?theme=0" width="50%" height="232"
+        frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>    
     </div>
 
-    <iframe src="https://open.spotify.com/embed/episode/6sSxbsFEJR56Lk3N6NQdJ6?theme=0" width="50%" height="232"
-        frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
 
 <!-- FIN DE LAS PROMESAS DE ELON -->
 
+
+<footer data-aos="fade-up" class="footer">
+    <p class="destacado">Buscanos en nuestras redes sociales</p>
+    <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
+                src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
+    <a target="_blank" href="https://twitter.com/hodlers_crypto"> <img class="social-icon" src="images/logo-twitter.png"
+            alt="Logo Twitter"> </a>
+    <p class="firma">Hodlers. Aprendé en comunidad.</p>
+</footer>
 
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
-    <footer class="footer">
-        <p class="destacado">Buscanos en nuestras redes sociales</p>
-        <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
-                    src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
-        <a target="_blank" href="https://www.twitter.com"> <img class="social-icon" src="images/logo-twitter.png"
-                alt="Logo Twitter"> </a>
-        <p class="firma">Hodlers. Aprendé en comunidad.</p>
-    </footer>
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 150, // offset (in px) from the original trigger point
+  delay: 10, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+
+
 
 </body>

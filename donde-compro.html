@@ -14,7 +14,8 @@
   integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 
-
+    <!-- AOS - efectos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- FONTS -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -119,18 +120,18 @@
 
     <section class="frase-section">
       <div class="frases-container">
-        <p class="texto-vertical"> tené en cuenta </p>
-        <p class="frases"> Si comprás en un exchange local tus movimientos<span class="texto-lila">
+        <p data-aos="fade-right" class="texto-vertical"> tené en cuenta </p>
+        <p data-aos="fade-left" class="frases"> Si comprás en un exchange local tus movimientos<span class="texto-lila">
             serán reportados a la AFIP</span> cada mes.</p>
-        <p class="frases"> La mejor manera de cuidar tu privacidad es <span class="texto-lila">
+        <p data-aos="fade-left" class="frases"> La mejor manera de cuidar tu privacidad es <span class="texto-lila">
             comprar P2P</span> y guardar tus cripto fuera del exchange. </p>
       </div>
     </section>
 
   </section>
-  <div class="separador"></div>
+  <div data-aos="fade-up" class="separador"></div>
   <!-- BINANCE -->
-  <div class="donde-elemento2">
+  <div data-aos="fade-up" class="donde-elemento2">
     <img class="img-reco" src="images/Binance.png" alt="Binance">
     <h3 class="reco-titulo"> Binance </h3>
     <p class="reco-texto"> Binance es el exchange de criptomonedas más grande del mundo, con un
@@ -146,7 +147,7 @@
     <a href="https://www.instagram.com/binance.argentina/" target="_blank"><img class="reco-social"
         src="images/social-icons/instagram.png" alt="web logo"></a>
   </div>
-  <div class="donde row">
+  <div data-aos="fade-up" class="donde row">
     <!-- BOTÓN PROS -->
     <div class="donde-elemento" data-bs-toggle=collapse href="#pros" role="button" aria-expanded="false"
       aria-controls="pros">
@@ -190,12 +191,12 @@
 
   <!-- SEPARADOR -->
   <div>
-    <img class="espacio" src="images/SEPARADOR.png" alt="separador">
+    <img data-aos="fade-up" class="espacio" src="images/SEPARADOR.png" alt="separador">
   </div>
 
 
   <!-- TIENDA DOLAR -->
-  <div class="donde-elemento2">
+  <div data-aos="fade-up" class="donde-elemento2">
     <img class="img-reco" src="images/tiendadolar.png" alt="Tienda Dólar">
     <h3 class="reco-titulo"> Tienda Dólar </h3>
     <p class="reco-texto"> El gran golpe que dio Tienda Dólar fue el de incluir el soporte de Binance Smart Chain y
@@ -213,7 +214,7 @@
         src="images/social-icons/instagram.png" alt="web logo"></a>
     <a href="https://open.spotify.com/episode/0L1GmRs1gxOAu5ea9NINVW?si=cGljxWRHSPG0zg9orWuAVA&nd=1" alt="web logo"></a>
   </div>
-  <div class="donde row">
+  <div data-aos="fade-up" class="donde row">
     <!-- BOTÓN PROS -->
     <div class="donde-elemento" data-bs-toggle=collapse href="#prostd" role="button" aria-expanded="false"
       aria-controls="prostd">
@@ -257,12 +258,12 @@
 
   <!-- SEPARADOR -->
   <div>
-    <img class="espacio" src="images/separador-angosto.png" alt="separador">
+    <img data-aos="fade-up" class="espacio" src="images/separador-angosto.png" alt="separador">
   </div>
 
 
   <!-- BUENBIT -->
-  <div class="donde-elemento2">
+  <div data-aos="fade-up" class="donde-elemento2">
     <img class="img-reco" src="images/buenbit.png" alt="Buenbit">
     <h3 class="reco-titulo"> Buenbit </h3>
     <p class="reco-texto"> Buenbit es una de las mejores opciones a nivel local. Es un exchange con una
@@ -282,7 +283,7 @@
         target="_blank"><img class="reco-social" src="images/social-icons/spotify.png" alt="web logo"></a>
     </div>
   </div>
-  <div class="donde row">
+  <div data-aos="fade-up" class="donde row">
     <!-- BOTÓN PROS -->
     <div class="donde-elemento" data-bs-toggle=collapse href="#prosbb" role="button" aria-expanded="false"
       aria-controls="prosbb">
@@ -343,12 +344,12 @@
   </div>
   <!-- SEPARADOR -->
   <div>
-    <img class="espacio" src="images/SEPARADOR.png" alt="separador">
+    <img data-aos="fade-up" class="espacio" src="images/SEPARADOR.png" alt="separador">
   </div>
 
-  <h2 class="titulos"> Otros exchanges en los que podés operar </h2>
+  <h2 data-aos="fade-up" class="titulos"> Otros exchanges en los que podés operar </h2>
 
-  <div class="reco-tabla">
+  <div data-aos="fade-up" class="reco-tabla">
     <div class="donde-elemento3">
       <img class="img-reco" src="images/exchanges/ripio.jpg" alt="Ripio">
       <p class="reco-titulo"> Ripio </p>
@@ -445,6 +446,31 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 150, // offset (in px) from the original trigger point
+  delay: 10, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
 
     <!-- TELEGRAM FIXED - LINK AL GRUPO -->
     <div>
@@ -453,11 +479,11 @@
       </a>
   </div>
 
-  <footer class="footer">
+  <footer data-aos="fade-up" class="footer">
     <p class="destacado">Buscanos en nuestras redes sociales</p>
     <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
           src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
-    <a target="_blank" href="https://www.twitter.com"> <img class="social-icon" src="images/logo-twitter.png"
+    <a target="_blank" href="https://twitter.com/hodlers_crypto"> <img class="social-icon" src="images/logo-twitter.png"
         alt="Logo Twitter"> </a>
     <p class="firma">Hodlers. Aprendé en comunidad.</p>
   </footer>
