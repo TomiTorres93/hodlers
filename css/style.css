@@ -68,7 +68,7 @@ header a:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  z-index: 20;
 }
 .logo .logo-image {
   margin: 10px;
@@ -103,7 +103,7 @@ header a:hover {
   top: 10px;
   left: 10px;
   margin-top: 10px;
-  z-index: 0;
+  z-index: 10;
   opacity: 50%;
   padding-left: 2px;
 }
@@ -572,7 +572,7 @@ body {
   }
 
   .titulos {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
     padding: 0px 20px;
   }
 
@@ -599,12 +599,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap !important;
-    justify-content: space-around !important;
+    justify-content: space-around;
   }
 
   .destacado-img {
     width: 80%;
-    opacity: 100% !important;
+    opacity: 100%;
   }
 
   .glosario-elemento {
@@ -637,12 +637,22 @@ body {
   }
 
   .donde-elemento {
-    width: 70% !important;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     align-items: center;
     transition: 0.3s all;
     margin: 10px 5px 5px 5px;
+  }
+
+  .donde-elemento2 {
+    height: 520px;
+    width: 80%;
+  }
+
+  .donde-elemento3 {
+    width: 80%;
+    height: 450px;
   }
 
   .donde {
@@ -655,7 +665,7 @@ body {
   }
 
   .placas-width {
-    width: 75% !important;
+    width: 75%;
   }
 
   .reco-tabla {
@@ -674,7 +684,7 @@ body {
     transition: 0.3s all;
     margin: 20px;
     width: 80% !important;
-    height: 420px !important;
+    height: 420px;
   }
 
   .img-reco {
@@ -684,20 +694,10 @@ body {
     margin-top: 5%;
   }
 
-  .donde-elemento2 {
-    height: 520px !important;
-    width: 80%;
-  }
-
-  .donde-elemento3 {
-    width: 80%;
-    height: 450px;
-  }
-
   .frases-container {
     display: flex;
     align-items: center;
-    flex-direction: column !important;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 50px 0px 50px 0px;
   }

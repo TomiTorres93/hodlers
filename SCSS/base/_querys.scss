@@ -23,7 +23,7 @@
     }
 
     .titulos {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
         padding: 0px 20px;
     }
 
@@ -50,11 +50,11 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap !important;
-        justify-content: space-around !important;
+        justify-content: space-around;
     }
     .destacado-img {
         width: 80%;
-        opacity: 100% !important;
+        opacity: 100%;
     }
 
     .glosario-elemento {
@@ -86,13 +86,24 @@
      }
     
     .donde-elemento {
-        width: 70% !important;
+        width: 80%;
         background-color: rgb(255, 255, 255, 30%);
         border-radius: 25px;
         align-items: center;
         transition: 0.3s all;
         margin: 10px 5px 5px 5px;
     }
+ 
+    
+    .donde-elemento2 {
+        height: 520px;
+        width: 80%;
+     }
+ 
+     .donde-elemento3 {
+         width: 80%;
+         height: 450px;
+     }
 
     .donde {
         display: flex;
@@ -104,7 +115,7 @@
     }
 
     .placas-width {
-        width: 75% !important;
+        width: 75%;
     }
 
     .reco-tabla {
@@ -124,7 +135,7 @@
         transition: 0.3s all;
         margin: 20px;
         width: 80% !important;
-        height: 420px !important;
+        height: 420px;
         
     }
 
@@ -135,20 +146,11 @@
         margin-top: 5%;
     }
 
-    .donde-elemento2 {
-       height: 520px !important;
-       width: 80%;
-    }
-
-    .donde-elemento3 {
-        width: 80%;
-        height: 450px;
-    }
 
     .frases-container {
         display: flex;
         align-items: center;
-        flex-direction: column !important;
+        flex-direction: column;
         flex-wrap: wrap;
         padding: 50px 0px 50px 0px;
     }
