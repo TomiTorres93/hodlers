@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- AOS - efectos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -106,12 +106,12 @@
 
         <!-- PORTADA -->
         <img src="images/portada.png" alt="Portada" class="portada hodlers none-mobile">
-        
+
 
 
         <!-- PORTADA -->
         <img src="images/portada-cuadrada.png" alt="Portada" class="portada hodlers desktop-none">
-        
+
 
         <!-- HODLERS TITULO -->
         <div class="titulo-container">
@@ -153,14 +153,20 @@
 
     <section class="frase-section">
         <div class="frases-container">
-            <a data-aos="fade-right" href="https://twitter.com/Wault_Finance/status/1404517070453215234" target="_blank" class="frases"> <span
-                    class="texto-lila"> Wault Finance </span> cruza a la red de Polygon
-                y suma 300M de TVL en menos de 5 horas. <span class="fuente"> @Wault_Finance </span> </a>
-            <a data-aos="fade-right" href="https://www.criptonoticias.com/mercados/precio-bitcoin-supera-usd-40000-primera-vez-ultimo-mes/"
-                target="_blank" class="frases"> El precio de Bitcoin <span class="texto-lila"> supera los 40 mil </span>
-                por primera
-                vez en el último mes. <span class="fuente"> (criptonoticias.com)</span> </a>
-            <p data-aos="fade-left" class="texto-vertical"> noticias </p>
+            <div class="frase-recuadro">
+                <a data-aos="fade-right" href="https://twitter.com/Wault_Finance/status/1404517070453215234"
+                    target="_blank" class="frases"> <span class="texto-lila"> Wault Finance </span> cruza a la red de
+                    Polygon
+                    y suma 300M de TVL en menos de 5 horas. <span class="fuente"> @Wault_Finance </span> </a></div>
+            <div class="frase-recuadro"><a data-aos="fade-right"
+                    href="https://www.criptonoticias.com/mercados/precio-bitcoin-supera-usd-40000-primera-vez-ultimo-mes/"
+                    target="_blank" class="frases"> El precio de Bitcoin <span class="texto-lila"> supera los 40 mil
+                    </span>
+                    por primera
+                    vez en el último mes. <span class="fuente"> (criptonoticias.com)</span> </a> </div>
+            <div data-aos="fade-left">
+                <p class="texto-vertical"> noticias </p>
+            </div>
         </div>
     </section>
 
@@ -187,17 +193,29 @@
         </div>
     </section>
 
+
+
     <!-- APARTADO 2 -->
 
     <section class="frase-section">
         <div class="frases-container">
-            <p data-aos="fade-right" class="texto-vertical">sos tu propio banco</p>
-            <p data-aos="fade-left"class="frases"> <span class="texto-lila"> Not your keys, not your cryptos. </span> Guardá tus cripto en
-                una wallet y conservá con seguridad
-                sus claves de acceso. </p>
-            <p data-aos="fade-left" class="frases"> <span class="texto-lila">No inviertas más de lo que estés dispuesto a perder. </span>
-                Investigá, analizá. No te dejes llevar
-                por el FOMO ni el FUD. </p>
+            <div data-aos="fade-right">
+                <p class="texto-vertical">sos tu propio banco</p>
+            </div>
+            <div class="frase-recuadro">
+                <p data-aos="fade-left" class="frases"> <span class="texto-lila"> Not your keys, not your cryptos.
+                    </span>
+                    Guardá tus cripto en
+                    una wallet y conservá con seguridad
+                    sus claves de acceso. </p>
+            </div>
+            <div class="frase-recuadro">
+                <p data-aos="fade-left" class="frases"> <span class="texto-lila">No inviertas más de lo que estés
+                        dispuesto a
+                        perder. </span>
+                    Investigá, analizá. No te dejes llevar
+                    por el FOMO ni el FUD. </p>
+            </div>
 
         </div>
 
@@ -213,7 +231,7 @@
         <p class="titulos">¿Quiénes somos?</p>
         <P class="parrafos">Un grupo de amigos con ganas de ayudarte a dar tus primeros pasos en el increíble mundo
             cripto. ¡Y no cobramos ni un satoshi! </P>
-        <img  class="separador fuego placas-width" src="images/separador-nopagues.png"
+        <img class="separador fuego placas-width" src="images/separador-nopagues.png"
             alt="no pagues por cursos de criptomonedas">
     </section>
 
@@ -233,38 +251,38 @@
         <p class="destacado">Buscanos en nuestras redes sociales</p>
         <span><a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5"> <img class="social-icon"
                     src="images/logo-telegram.png" alt="Logo Telegram"></a></span>
-        <a target="_blank" href="https://twitter.com/hodlers_crypto"> <img class="social-icon" src="images/logo-twitter.png"
-                alt="Logo Twitter"> </a>
+        <a target="_blank" href="https://twitter.com/hodlers_crypto"> <img class="social-icon"
+                src="images/logo-twitter.png" alt="Logo Twitter"> </a>
         <p class="firma">Hodlers. Aprendé en comunidad.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 150, // offset (in px) from the original trigger point
-  delay: 10, // values from 0 to 3000, with step 50ms
-  duration: 700, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});
-</script>
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 150, // offset (in px) from the original trigger point
+            delay: 10, // values from 0 to 3000, with step 50ms
+            duration: 700, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 
 </body>
 

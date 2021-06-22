@@ -112,6 +112,7 @@ body {
 .frase-section {
     background-color: nth($color, 2);
 }
+
 .frases-container {
     @extend %flexbox-row;
     justify-content: space-evenly;
@@ -122,19 +123,23 @@ body {
 .frases {
 text-decoration: none;
 color: black;
+@include destacados(1.5rem);
+font-weight: nth($font-weight, 2) !important;
+transition: all 1s;
     &:hover {
         color: nth($color, 3);
     }
+}
 
-width: 25%;
-@include destacados(1.5rem);
-font-weight: nth($font-weight, 2) !important;
-padding: 50px;
-background-color: white;
-border-radius: $borde-redondeado;
-transition: 0.5s all;
-border: hsl(265, 25%, 65%) groove;
-box-shadow: nth($color, 3) 20px -16px;
+.frase-recuadro {
+    width: 25%;
+    padding: 50px;
+    background-color: white;
+    border-radius: $borde-redondeado;
+    transition: 0.5s all;
+    border: hsl(265, 25%, 65%) groove;
+    box-shadow: nth($color, 3) 20px -16px;
+
     &:hover {
         border: hsl(265, 25%, 65%) groove;
         box-shadow: nth($color, 4) 15px -10px;
@@ -146,7 +151,7 @@ box-shadow: nth($color, 3) 20px -16px;
     writing-mode: vertical-rl;
     text-orientation:upright;
     font-weight:lighter;
-    transition: 1s;
+    transition: 1s all;
     color: white;
         &:hover {
             transform: translate(10px);

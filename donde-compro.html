@@ -3,7 +3,7 @@
 <head>
 
   <-- FAVICON -->
-  <link rel="shortcut icon" href="images/logo-solo.png">
+<link rel="shortcut icon" href="images/logo-solo.png">
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -14,8 +14,8 @@
   integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 
-    <!-- AOS - efectos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- AOS - efectos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- FONTS -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -120,11 +120,18 @@
 
     <section class="frase-section">
       <div class="frases-container">
-        <p data-aos="fade-right" class="texto-vertical"> tené en cuenta </p>
-        <p data-aos="fade-left" class="frases"> Si comprás en un exchange local tus movimientos<span class="texto-lila">
-            serán reportados a la AFIP</span> cada mes.</p>
-        <p data-aos="fade-left" class="frases"> La mejor manera de cuidar tu privacidad es <span class="texto-lila">
-            comprar P2P</span> y guardar tus cripto fuera del exchange. </p>
+        <div  data-aos="fade-right">
+          <p class="texto-vertical"> tené en cuenta </p>
+        </div>
+        <div class="frase-recuadro">
+          <p data-aos="fade-left" class="frases"> Si comprás en un exchange local tus movimientos<span
+              class="texto-lila">
+              serán reportados a la AFIP</span> cada mes.</p>
+        </div>
+        <div class="frase-recuadro">
+          <p data-aos="fade-left" class="frases"> La mejor manera de cuidar tu privacidad es <span class="texto-lila">
+              comprar P2P</span> y guardar tus cripto fuera del exchange. </p>
+        </div>
       </div>
     </section>
 
@@ -446,37 +453,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 150, // offset (in px) from the original trigger point
-  delay: 10, // values from 0 to 3000, with step 50ms
-  duration: 700, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});
-</script>
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 150, // offset (in px) from the original trigger point
+      delay: 10, // values from 0 to 3000, with step 50ms
+      duration: 700, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-    <!-- TELEGRAM FIXED - LINK AL GRUPO -->
-    <div>
-      <a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5">
-          <img class="telegram-fixed" src="images/telegram-fixed-logo.png" alt="telegram-group-link-logo">
-      </a>
+    });
+  </script>
+
+  <!-- TELEGRAM FIXED - LINK AL GRUPO -->
+  <div>
+    <a target="_blank" href="https://t.me/joinchat/ogOpnEU7haFhMzc5">
+      <img class="telegram-fixed" src="images/telegram-fixed-logo.png" alt="telegram-group-link-logo">
+    </a>
   </div>
 
   <footer data-aos="fade-up" class="footer">

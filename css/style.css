@@ -371,10 +371,17 @@ body {
 .frases {
   text-decoration: none;
   color: black;
-  width: 25%;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 500 !important;
+  transition: all 1s;
+}
+.frases:hover {
+  color: #74668a;
+}
+
+.frase-recuadro {
+  width: 25%;
   padding: 50px;
   background-color: white;
   border-radius: 25px;
@@ -382,10 +389,7 @@ body {
   border: #a28fbc groove;
   box-shadow: #74668a 20px -16px;
 }
-.frases:hover {
-  color: #74668a;
-}
-.frases:hover {
+.frase-recuadro:hover {
   border: #a28fbc groove;
   box-shadow: #8a7aa3 15px -10px;
 }
@@ -396,7 +400,7 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-weight: lighter;
-  transition: 1s;
+  transition: 1s all;
   color: white;
 }
 .texto-vertical:hover {
@@ -718,6 +722,11 @@ body {
   .parrafos {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .multimedia-mobile {
+    width: 90%;
+    height: 200px;
   }
 }
 /* FIN DEL MENÚ */
