@@ -194,3 +194,17 @@ transition: all 1s;
 .azul {
     color: rgb(103, 105, 201);
 }
+
+.widget-elemento {
+    width: 45%;
+    background-color: rgb(255, 255, 255, 30%);
+    border-radius: $borde-redondeado;
+    align-items: center;
+    transition: 0.3s all;
+    margin: 20px;
+    margin: auto;
+}
+
+.widget-elemento:hover {
+    background-color: rgb(190, 158, 218, 20%);
+}

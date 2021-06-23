@@ -151,11 +151,15 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 50px 0px 50px 0px;
     }
 
     .frases {
+        font-size: 1rem;
+    }
+
+    .frase-recuadro {
         width: 70%;
         margin: 20px;
         @include destacados(1rem);
@@ -176,6 +180,11 @@
     .multimedia-mobile {
         width: 90%;
         height: 200px;
+    }
+
+    .widget-elemento {
+        width: 75%;
+
     }
 
  }

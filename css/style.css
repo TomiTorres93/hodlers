@@ -446,6 +446,20 @@ body {
   color: #6769c9;
 }
 
+.widget-elemento {
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  align-items: center;
+  transition: 0.3s all;
+  margin: 20px;
+  margin: auto;
+}
+
+.widget-elemento:hover {
+  background-color: rgba(190, 158, 218, 0.2);
+}
+
 /* Extends */
 .reco-tabla, .glosario, .donde, .menu, .placas {
   display: flex;
@@ -711,11 +725,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 50px 0px 50px 0px;
   }
 
   .frases {
+    font-size: 1rem;
+  }
+
+  .frase-recuadro {
     width: 70%;
     margin: 20px;
     font-family: "Raleway", sans-serif;
@@ -736,6 +754,10 @@ body {
   .multimedia-mobile {
     width: 90%;
     height: 200px;
+  }
+
+  .widget-elemento {
+    width: 75%;
   }
 }
 /* FIN DEL MENÚ */
