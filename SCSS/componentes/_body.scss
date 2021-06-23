@@ -161,6 +161,16 @@ transition: all 1s;
 
 .texto-lila {
     color: nth($color, 4);
+    text-decoration: none;
+}
+
+.links {
+        color: nth($color, 4);
+        text-decoration: none;
+    &:hover {
+        color: nth($color, 3);
+    }
+
 }
 
 .fondo-separador {
